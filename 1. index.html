@@ -1,45 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheik Muskan | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+height:100vh;
+background:linear-gradient(135deg,#2563eb,#9333ea);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:#facc15;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:white;
+color:#2563eb;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin:10px;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:40px;
+align-items:center;
+}
+
+.profile{
+width:250px;
+height:250px;
+border-radius:50%;
+background:linear-gradient(45deg,#2563eb,#9333ea);
+margin:auto;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Sheik Muskan</h1>
-    <p>Full Stack Web Developer</p>
+<div class="hero">
+<h1>Hi, I'm <span>Sheik Muskan</span></h1>
+<p>B.Tech CSE Student | Full Stack Web Developer</p>
+
+<a href="#projects" class="btn">View Projects</a>
+<a href="#contact" class="btn">Contact Me</a>
+</div>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>I am a B.Tech student interested in Web Development and Software Engineering.</p>
+<section id="about">
+<h2 class="title">About Me</h2>
+
+<div class="about">
+<div class="profile"></div>
+
+<div>
+<h3>B.Tech CSE Student</h3>
+<p>
+Passionate about Web Development, Full Stack Development and
+building real world applications.
+Currently improving my skills in HTML, CSS, JavaScript,
+Python and GitHub.
+</p>
+</div>
+</div>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Flutter</li>
-    </ul>
+<section id="skills">
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">React (Learning)</div>
+</div>
 </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li>Language Learning App</li>
-        <li>AI Resume Analyzer</li>
-    </ul>
+<section id="projects">
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Responsive portfolio website.</p>
+</div>
+
+<div class="project">
+<h3>Mini CRM</h3>
+<p>Client Lead Management System.</p>
+</div>
+
+<div class="project">
+<h3>Local Business Website</h3>
+<p>Business promotion website project.</p>
+</div>
+
+<div class="project">
+<h3>AI Resume Analyzer</h3>
+<p>Resume analysis project.</p>
+</div>
+
+</div>
 </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: yourmail@gmail.com</p>
+<section id="contact">
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+<p>Email: yourmail@gmail.com</p>
+<p>GitHub: github.com/sheikmuskan724-cmyk</p>
+<p>LinkedIn: linkedin.com</p>
+</div>
 </section>
 
-<script src="script.js"></script>
+<footer>
+<p>© 2026 Sheik Muskan | Portfolio</p>
+</footer>
+
 </body>
 </html>
